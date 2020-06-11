@@ -1,0 +1,179 @@
+// Override default variables before the import
+// $body-bg: #000;
+$primary : #024873; // primary
+$secondary : #0396A6; //secondary
+$info: #8f1818; //info
+// $white : #04926D; // body background
+// $green: #C1C44D;
+
+// Option A
+
+  @import '../node_modules/bootstrap/scss/bootstrap.scss';
+// Option B: Include parts of Bootstrap
+
+// Required
+// @import "../node_modules/bootstrap/scss/functions";
+// @import "../node_modules/bootstrap/scss/variables";
+// @import "../node_modules/bootstrap/scss/mixins";
+
+//optional
+// @import "../node_modules/bootstrap/scss/utilities";
+// @import "../node_modules/bootstrap/scss/navbar";
+// @import "../node_modules/bootstrap/scss/reboot";
+// @import "../node_modules/bootstrap/scss/grid";
+// @import "../node_modules/bootstrap/scss/buttons";
+// @import "../node_modules/bootstrap/scss/images";
+// @import "../node_modules/bootstrap/scss/jumbotron";
+// @import "../node_modules/bootstrap/scss/transitions";
+// @import "../node_modules/bootstrap/scss/type";
+
+body{
+  font-family: 'Open Sans', sans-serif;
+  font-size: 0.9em;
+}
+
+.headerImage{
+    width: 100vw;
+    height: 50vh;
+    background-position: center;
+    background-size: cover;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+
+header{
+  width:80%;
+  height: 120px;
+  //background: white;
+}
+
+.blog-container{
+  width:80%;
+  display: table;
+  margin: auto;
+}
+
+.breadcrumb-size{
+  font-size: 1.2em;
+}
+
+.widget{
+  list-style-type: none;
+  padding:0;
+  padding-bottom: 10px;
+  //background: #8f1818;
+}
+.page-wrap{
+  padding: 1rem 0;
+}
+.siteTitle{
+  margin-left: 100px;
+}
+.searchDiv{
+  margin-left: 85px;
+}
+.top-bar {
+  /* list-style: none; */
+  padding:50px;
+  /* border:2px solid red; */
+}
+
+.top-bar li{
+  display:inline;
+}
+
+.top-bar a{
+  padding: 0.25rem 1rem;
+  color:white;
+}
+
+/* .myMargin{
+  margin-top: -200px;
+} */
+
+.jumbotron{
+  height: 150px;
+  margin-bottom: 0;
+}
+.myPara{
+  font-size:22px;
+  color: blue;
+}
+.text-info{
+  width:100% !important;
+}
+
+.billingFields .form-row{
+    width: 100% !important;
+}
+
+.billingFields .form-row .woocommerce-input-wrapper{
+    width: 100% !important;
+}
+
+.billingFields .form-row .woocommerce-input-wrapper input,
+.billingFields .form-row .woocommerce-input-wrapper select{
+    height: calc(1.5em + .75rem + 2px) !important;
+    padding: .375rem .75rem !important;
+    font-size: 1rem !important;
+    font-weight: 400 !important;
+    line-height: 1.5 !important;
+}
+
+.billingFields .form-row .woocommerce-input-wrapper textarea{
+    min-height: 200px !important;
+    max-height: 800px !important;
+    padding: .375rem .75rem !important;
+    font-size: 1rem !important;
+    font-weight: 400 !important;
+    line-height: 1.5 !important;
+}
+
+.footerText{
+  margin-left:100px;
+}
+.facebook{
+  width:80px;
+  height:auto;
+}
+
+
+// Medium devices (tablets, less than 992px)
+@media (min-width: 100px) and (max-width: 991.98px) {
+  header{
+    width: 100%;
+    height: 390px;
+    .cta{
+      display: table;
+      margin: auto;
+    }
+  }
+
+  .top-bar a {
+    display: inline;
+    width: 100%;
+  }
+}
+
+@media (min-width: 991.98px) {
+  header{
+    width: 100%;
+    height: 170px;
+  }
+}
+
+// Extra small devices (portrait phones, less than 576px)
+@media (max-width: 575.98px) {
+  div.text-secondary{
+    display: table;
+    margin: auto;
+    margin-left: 1.5rem;
+    margin-right: 1.5rem;
+  }
+  .cta{
+    display: table;
+    margin: auto;
+  }
+}
