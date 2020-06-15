@@ -19,7 +19,7 @@ function mytheme_customize_register( $wp_customize ) {
    	'settings'   => 'unitedIndians_backgroundColour',
    ) ) );
 
-   // Header and Footer garden_backgroundColour // Background Colour
+   // Header and Footer unitedIndians_backgroundColour // Background Colour
     $wp_customize->add_setting( 'unitedIndians_headerFooterColour' , array(
         'default'   => '#000000',
         'transport' => 'refresh',
@@ -35,60 +35,56 @@ function mytheme_customize_register( $wp_customize ) {
   //
   //
   //  // Footer Message
-  //  $wp_customize->add_section( 'unitedIndians_footerSection' , array(
-  //      'title'      => __( 'Footer Text', 'unitedIndiansTheme' ),
-  //      'priority'   => 30,
-  //  ));
-  //
-  //  $wp_customize->add_setting( 'unitedIndians_footerMessage' , array(
-  //      'default'   => 'copyright@2020',
-  //      'transport' => 'refresh',
-  //  ) );
-  //
-  //  $wp_customize->add_control( new WP_Customize_Control( $wp_customize, 'unitedIndians_footerMessageControl', array(
-  //    'label'      => __( 'Footer Text', 'unitedIndiansTheme' ),
-  //    'section'    => 'unitedIndians_footerSection',
-  //    'settings'   => 'unitedIndians_footerMessage',
-  //  ) ) );
+   $wp_customize->add_section( 'unitedIndians_footerSection' , array(
+       'title'      => __( 'Footer Text', 'unitedIndiansTheme' ),
+       'priority'   => 30,
+   ));
+
+   $wp_customize->add_setting( 'unitedIndians_footerMessage' , array(
+       'default'   => 'copyright@2020',
+       'transport' => 'refresh',
+   ) );
+
+   $wp_customize->add_control( new WP_Customize_Control( $wp_customize, 'unitedIndians_footerMessageControl', array(
+     'label'      => __( 'Footer Text', 'unitedIndiansTheme' ),
+     'section'    => 'unitedIndians_footerSection',
+     'settings'   => 'unitedIndians_footerMessage',
+   ) ) );
   //
   //  // Site Title Text
-  //  $wp_customize->add_section( 'unitedIndians_siteTitleTextSection' , array(
-  //      'title'      => __( 'Site Title Text', 'unitedIndiansTheme' ),
-  //      'priority'   => 30,
-  //  ));
-  //
-  //  $wp_customize->add_setting( 'unitedIndians_siteTitleText' , array(
-  //      'default'   => 'United Indians',
-  //      'transport' => 'refresh',
-  //  ) );
-  //
-  //  $wp_customize->add_control( new WP_Customize_Control( $wp_customize, 'garden_siteTitleTextControl', array(
-  //    'label'      => __( 'Site Title Text', 'unitedIndiansTheme' ),
-  //    'section'    => 'unitedIndians_siteTitleTextSection',
-  //    'settings'   => 'unitedIndians_siteTitleText',
-  //  ) ) );
+   $wp_customize->add_section( 'unitedIndians_siteTitleTextSection' , array(
+       'title'      => __( 'Site Title Text', 'unitedIndiansTheme' ),
+       'priority'   => 30,
+   ));
+
+   $wp_customize->add_setting( 'unitedIndians_siteTitleText' , array(
+       'default'   => 'United Indians',
+       'transport' => 'refresh',
+   ) );
+
+   $wp_customize->add_control( new WP_Customize_Control( $wp_customize, 'unitedIndians_siteTitleTextControl', array(
+     'label'      => __( 'Site Title Text', 'unitedIndiansTheme' ),
+     'section'    => 'unitedIndians_siteTitleTextSection',
+     'settings'   => 'unitedIndians_siteTitleText',
+   ) ) );
   //
   //  // footer icon image
   //
-  //  $wp_customize->add_section( 'unitedIndians_footerIconImage' , array(
-  //     'title'      => __( 'Footer Icon Image', 'unitedIndiansTheme' ),
-  //     'priority'   => 45,
-  // ) );
-  //
-  // $wp_customize->add_setting( 'unitedIndians_footerIcon' , array(
-  //     'default'   => get_template_directory_uri() . 'images/facebook.png',
-  //     'transport' => 'refresh',
-  // ) );
-  //
-  // $wp_customize->add_control( new WP_Customize_Image_Control( $wp_customize, 'unitedIndians_footerIconImageControl', array(
-  //   'label'      => __( 'Footer Icon Image', 'unitedIndiansTheme' ),
-  //   'section'    => 'unitedIndians_footerIconImage',
-  //   'settings'   => 'unitedIndians_footerIcon',
-  // ) ) );
-  //
-  //
-  //
-  //
+   $wp_customize->add_section( 'unitedIndians_footerIconImage' , array(
+      'title'      => __( 'Footer Icon Image', 'unitedIndiansTheme' ),
+      'priority'   => 45,
+  ) );
+
+  $wp_customize->add_setting( 'unitedIndians_footerIcon' , array(
+      'default'   => get_template_directory_uri() . 'images/facebook.png',
+      'transport' => 'refresh',
+  ) );
+
+  $wp_customize->add_control( new WP_Customize_Image_Control( $wp_customize, 'unitedIndians_footerIconImageControl', array(
+    'label'      => __( 'Footer Icon Image', 'unitedIndiansTheme' ),
+    'section'    => 'unitedIndians_footerIconImage',
+    'settings'   => 'unitedIndians_footerIcon',
+  ) ) );
 
    }
 
@@ -104,7 +100,7 @@ function mytheme_customize_register( $wp_customize ) {
             background-color: <?php echo get_theme_mod('unitedIndians_backgroundColour','#ffffff'); ?>!important;
          }
    .myTheme{
-             background-color: <?php echo get_theme_mod('unitedIndians_footerColour', '#8f1818'); ?>!important;
+             background-color: <?php echo get_theme_mod('unitedIndians_headerFooterColour', '#8f1818'); ?>!important;
            }
 
 

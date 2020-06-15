@@ -1,14 +1,14 @@
 <div class="row">
 <?php
 if (have_posts()) : ?>
-  <div class="col-sm-12 col-md-6 col-lg-9">
+  <div class="col-lg-9">
     <?php
   while (have_posts()):
     the_post();
   ?>
 
 
-    <div class="card mt-5 mb-3">
+    <div class="card mt-5 mb-5 border-dark rounded-top">
       <div class="card-body">
 
         <!-- featured image -->
@@ -19,7 +19,7 @@ if (have_posts()) : ?>
             </div>
       <?php endif; ?>
 
-    <h3> <?php the_title(); ?>   </h3>
+    <h3 class="pb-3"> <?php the_title(); ?>   </h3>
 
     <?php
     the_excerpt();//cut of some portion of text
@@ -40,7 +40,7 @@ endif;
 
 ?>
 
-<div class="col-lg-3">
+<div class="col-lg-3 pt-4">
 
   <?php if(is_active_sidebar('blog-sidebar')) :?>
     <?php dynamic_sidebar('blog-sidebar'); ?>

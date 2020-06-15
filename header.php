@@ -3,7 +3,8 @@
 <!--[if lte IE 6]><html class="preIE7 preIE8 preIE9"><![endif]-->
 <!--[if IE 7]><html class="preIE8 preIE9"><![endif]-->
 <!--[if IE 8]><html class="preIE9"><![endif]-->
-<!--[if gte IE 9]><!--><html lang="en" dir="ltr"><!--<![endif]-->
+<!--[if gte IE 9]><!-->
+<html lang="en" dir="ltr"><!--<![endif]-->
   <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
@@ -13,6 +14,7 @@
     <meta name="keywords" content="non-profit, Indian community, online store, art, culture, blogs">
 
     <link href="https://fonts.googleapis.com/css2?family=Open+Sans&display=swap" rel="stylesheet">
+    <script src="https://cdn.jsdelivr.net/npm/sweetalert2@9"></script>
     <!-- <link rel="shortcut icon" href="favicon.ico" type="image/vnd.microsoft.icon"> -->
     <!-- <link rel="stylesheet" href="//fonts.googleapis.com/css?family=font1|font2|etc" type="text/css"> -->
     <script type="text/javascript">
@@ -36,7 +38,8 @@
 
       <!-- <nav class="navbar navbar-expand-md navbar-light" role="navigation"> -->
       <nav class="navbar navbar-expand-lg navbar-light">
-        <div class="container">
+
+        <div class="container-fluid">
 
           <!-- Brand and toggle get grouped for better mobile display -->
           <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1" aria-controls="bs-example-navbar-collapse-1" aria-expanded="false" aria-label="Toggle navigation">
@@ -65,16 +68,6 @@
           ?>
 
 
-            <!-- Donate Button effect -->
-            <div class="spinner-grow text-danger" role="status">
-              <span class="sr-only">Loading...</span>
-            </div>
-            <div class="spinner-grow text-warning" role="status">
-              <span class="sr-only">Loading...</span>
-            </div>
-            <button type="button" class="btn btn-light btn-large cta" name="button">Donate Items</button>
-            </div>
-
-          </div>
-        </nav>
-      </header>
+    </div>
+  </nav>
+</header>

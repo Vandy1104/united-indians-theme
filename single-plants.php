@@ -11,7 +11,7 @@
   <?php endif; ?>
 
       <h1> <?php //the_title(); ?>   </h1>
-      <?php get_template_part('includes/section','plants'); ?>
+      <?php get_template_part('includes/section','arts'); ?>
          <?php wp_link_pages(); ?>
 
          <!-- wordpress custom field -->
@@ -24,13 +24,13 @@
          </ul> -->
 
          <!-- Plugin : Advanced Custom Field  -->
-         <ul>
-           <li> Category: <?php the_field('category'); ?> </li>
+         <!-- <ul>
+           <li> Category: <?php //the_field('category'); ?> </li>
 
-           <li> Botanical Name: <?php the_field('botanicalname'); ?> </li>
-          <li> Season when it grows: <?php the_field('season'); ?> </li>
+           <li> Botanical Name: <?php //the_field('botanicalname'); ?> </li>
+          <li> Season when it grows: <?php //the_field('season'); ?> </li>
 
-         </ul>
+         </ul> -->
 
 </div>
 </section>

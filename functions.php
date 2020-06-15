@@ -100,12 +100,12 @@ add_action('widgets_init', 'my_sidebars');
 function my_first_post_type(){
   $args = array(
     'labels' => array(
-        'name' => 'Plants',
-        'singular_name' => 'Plant',
+    'name' => 'Art&Culture',
+    'singular_name' => 'Culture Dance',
     ),
 
   'hierarchical' => true, //boolean value toggles between pages & posts without labels
-  'menu_icon' => 'dashicons-palmtree',//get icon name from wordpress dashicons
+  'menu_icon' => 'dashicons-admin-media',//get icon name from wordpress dashicons
   'public' => true,
   'has_archive' => true,
   'supports' => array('title','editor','thumbnail','custom-fields' ),// if one of the argument is  not mentioned,

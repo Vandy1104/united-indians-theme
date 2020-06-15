@@ -1,7 +1,7 @@
 <div class="row">
   <nav aria-label="breadcrumb">
-    <ol class="">
-      <li class="breadcrumb-item breadcrumb-size"><a class="text-info font-weight-bold" href="http://localhost/final-summative/category/blogs/">back ></a></li>
+    <ol class="bread-ol">
+      <li class="breadcrumb-item breadcrumb-size"><a class="text-info font-weight-bold" href="http://localhost/final-summative/category/blogs/">< back</a></li>
     </ol>
   </nav>
 </div>

@@ -16,7 +16,7 @@
 
     </div>
 
-    <div class="col-lg-3 mt-5 pt-5 pl-4 widget">
+    <div class="col-lg-3 mt-5 pt-5 pl-4 text-center widget">
 
       <?php if(is_active_sidebar('page-sidebar')) :?>
         <?php dynamic_sidebar('page-sidebar'); ?>

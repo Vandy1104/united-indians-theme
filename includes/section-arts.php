@@ -4,7 +4,7 @@ if (have_posts()) :
   while (have_posts()):
     the_post();
     ?>
-  <p class="display-4 mt-3"> <?php the_title(); ?> </p>
+  <h4 class="my-5"> <?php the_title(); ?> </h4>
 
 <a href="<?php the_permalink(); ?>" class="text-dark">
 <!-- featured image -->
